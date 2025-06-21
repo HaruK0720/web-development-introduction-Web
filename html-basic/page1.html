@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>リンクの練習</title>
-</head>
-<body>
-    <!-- 外部リンク -->
-    <a href="https://blog.proglus.jp/">プログラミング入門ナビ</a>
 
-    <a href="https://blog.proglus.jp/" target="_blank" rel="noopener">プログラミング入門ナビ</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>リンク ページ1</title>
+    </head>
 
-    <br>
-    <hr>
-    <br>
+    <body>
+        <!-- 外部リンク -->
+        <a href="https://blog.proglus.jp/">プログラミング入門ナビ</a>
 
-    <h1>リンクの表示</h1>
-    <p>要素：a / 属性：href</p>
+        <a href="https://blog.proglus.jp/" target="_blank" rel="noopener">プログラミング入門ナビ</a>
+        <!-- target="_blank"	新しいタブ（またはウィンドウ）でリンク先を開く -->
+        <!-- rel="noopener"	リンク先から元ページへのアクセスを禁止（セキュリティ向上） -->
+        <!-- rel="noreferrer"	上記＋参照元情報（リファラ）も送らない（アクセス解析されない） -->
 
-    <h2>＜a href="https://example.com"＞コンテンツ＜/a＞</h2>
+        <br><br>
+
+        <!-- 内部リンク -->
+        <a href="page2.html">ページ2へ</a>
+
+        <br><br>
+
+        <!-- ページ内リンク -->
+        <!-- id属性はタグに任意の名前をつける。同一ページ内で同じid属性を持てる要素は1つだけ。 -->
+        <a href="#apple">りんごへ</a>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <p>テスト</p>
+        <h2 id="apple">りんご</h2>
+
+        <br>
+        <hr>
+        <br>
+
+        <h1>リンクの表示</h1>
+        <p>要素：a / 属性：href</p>
+
+        <h2>＜a href="https://example.com"＞コンテンツ＜/a＞</h2>
         <p>anchor(アンカー)</p>
         <p>hyeper text reference(ハイパーテキスト　リファレンス)</p>
-    <ul>
-        <li>リンク先のURL（例：https://example.com）を指定</li>
-        <li>href属性は、クリックした際に遷移するリンク先のURLやファイルパスを指定</li>
-    </ul>
-</body>
+        <ul>
+            <li>リンク先のURL（例：https://example.com）を指定</li>
+            <li>href属性は、クリックした際に遷移するリンク先のURLやファイルパスを指定</li>
+        </ul>
+    </body>
+
 </html>
