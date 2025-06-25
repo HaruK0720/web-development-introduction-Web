@@ -1,85 +1,109 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>グループ化の練習</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: separate;
-            border: 1px solid #ccc;
-            margin: 20px 0;
-        }
-    </style>
-</head>
-<body>
-    <h1>グループ化の練習</h1>
-    <ul>
-        <li><a href="#">エンジニアへの道</a></li>
-        <li><a href="#">プログラミング入門</a></li>
-        <li><a href="#">ニュース</a></li>
-    </ul>
-    <!-- ul>li*3>a -->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>グループ化の練習</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: separate;
+                border: 1px solid #ccc;
+                margin: 20px 0;
+            }
+
+            footer > p {
+                background-color: black;
+                text-align: center;
+                color: white;
+                padding: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>グループ化の練習</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">エンジニアへの道</a></li>
+                    <li><a href="#">プログラミング入門</a></li>
+                    <li><a href="#">ニュース</a></li>
+                </ul>
+                <!-- ul>li*3>a -->
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h2>グループ化を学ぶのにおすすめのサイト10選</h2>
+                <p>グループ化を学べるサイトを10個紹介します。</p>
+            </article>
+
+            <section>
+                <h2>関連記事</h2>
+                <ul>
+                    <li><a href="#">関連記事1</a></li>
+                    <li><a href="#">関連記事2</a></li>
+                    <li><a href="#">関連記事3</a></li>
+                </ul>
+            </section>
+            <!-- エメット省略記法で、毎回「半角」にしてからTagキーを押すと次のコンテンツにいくよ -->
+        </main>
+
+        <aside>
+            <h2>広告</h2>
+            <p>全ショップ対象エントリーでポイント5倍</p>
+        </aside>
+
+        <footer>
+            <p><small>&copy; 2023 Yuta Nakamura</small></p>
+        </footer>
 
 
-    <h2>グループ化を学ぶのにおすすめのサイト10選</h2>
-    <p>グループ化を学べるサイトを10個紹介します。</p>
+        <br><br><br><br><br>
+        <hr>
+        <br>
 
-    <h2>関連記事</h2>
-    <ul>
-        <li><a href="#">関連記事1</a></li>
-        <li><a href="#">関連記事2</a></li>
-        <li><a href="#">関連記事3</a></li>
-    </ul>
-    <!-- エメット省略記法で、毎回「半角」にしてからTagキーを押すと次のコンテンツにいくよ -->
+        <table>
+            <tr>
+                <th>要素</th>
+                <th>説明</th>
+            </tr>
+            <tr>
+                <td>div</td>
+                <td>意味を持たない汎用ブロック</td>
+            </tr>
+            <tr>
+                <td>section</td>
+                <td>セクションをグルーピングする</td>
+            </tr>
+            <tr>
+                <td>header</td>
+                <td>セクションのヘッダーを示す</td>
+            </tr>
+            <tr>
+                <td>footer</td>
+                <td>セクションのフッターを示す</td>
+            </tr>
+            <tr>
+                <td>main</td>
+                <td>文書のメインコンテンツ領域を示す</td>
+            </tr>
+            <tr>
+                <td>article</td>
+                <td>記事コンテンツ要素</td>
+            </tr>
+            <tr>
+                <td>aside</td>
+                <td>余談要素</td>
+            </tr>
+            <tr>
+                <td>nav</td>
+                <td>ナビゲーション要素</td>
+            </tr>
+        </table>
+    </body>
 
-    <h2>広告</h2>
-    <p>全ショップ対象エントリーでポイント5倍</p>
-
-    <p><small>&copy; 2023 Yuta Nakamura</small></p>
-
-    <br><br><br><br><br>
-    <hr>
-    <br>
-
-    <table>
-        <tr>
-            <th>要素</th>
-            <th>説明</th>
-        </tr>
-        <tr>
-            <td>div</td>
-            <td>意味を持たない汎用ブロック</td>
-        </tr>
-        <tr>
-            <td>section</td>
-            <td>セクションをグルーピングする</td>
-        </tr>
-        <tr>
-            <td>header</td>
-            <td>セクションのヘッダーを示す</td>
-        </tr>
-        <tr>
-            <td>footer</td>
-            <td>セクションのフッターを示す</td>
-        </tr>
-        <tr>
-            <td>main</td>
-            <td>文書のメインコンテンツ領域を示す</td>
-        </tr>
-        <tr>
-            <td>article</td>
-            <td>記事コンテンツ要素</td>
-        </tr>
-        <tr>
-            <td>aside</td>
-            <td>余談要素</td>
-        </tr>
-        <tr>
-            <td>nav</td>
-            <td>ナビゲーション要素</td>
-        </tr>
-    </table>
-</body>
 </html>
