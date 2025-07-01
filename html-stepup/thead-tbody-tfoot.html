@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thead, tbody, tfootの練習</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 50%;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    thead {
+        background-color: #f2f2f2;
+    }
+</style>
+<body>
+    <!-- table>thead>tr>th*2 -->
+     <table>
+        <thead>
+            <tr>
+                <th>ヘッダー1</th>
+                <th>ヘッダー2</th>
+            </tr>
+        </thead>
+        <!-- tbody>tr>td*2 + Tab -->
+         <tbody>
+            <tr>
+                <td>ボディー1</td>
+                <td>ボディー2</td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <tr>
+                <td>フッター1</td>
+                <td>フッター2</td>
+            </tr>
+         </tfoot>
+     </table>
+
+
+     <br><br><br>
+     <hr><br>
+
+     <h1>thead, tbody, tfootとは</h1>
+     <p>tableの各要素について、意味的情報を提供する要素</p>
+     <dl>
+        <dt>要素：thead</dt>
+        <dd>説明：テーブルのヘッダ行を定義</dd>
+        <dt>要素：tbody</dt>
+        <dd>説明：テーブルのボディ部分（本体部分）を定義</dd>
+        <dt>要素：tfoot</dt>
+        <dd>説明：テーブルのフッター行を定義</dd>
+     </dl>
+
+     <br>
+
+     <h2>利用目的</h2>
+     <ul>
+        <li>文書構造をより正確に表現できる</li>
+        <li>CSSでスタイルを当てやすい</li>
+     </ul>
+
+     <p>実務上は、CSSでスタイルを当てる目的で使うことが多い</p>
+</body>
+</html>
