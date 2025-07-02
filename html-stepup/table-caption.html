@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>キャプションの練習</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                outline: 1px solid black;
+            }
+
+            td {
+                padding: 10px;
+                outline: 1px solid black;
+            }
+
+            .red {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <caption>テーブルのキャプション</caption>
+            <tr>
+                <td>データ1</td>
+                <td>データ2</td>
+                <td>データ3</td>
+            </tr>
+        </table>
+
+        <br><br><br>
+        <hr><br>
+        <h1>要素：caption</h1>
+        <dl>
+            <dt>属性：caption（キャプション）</dt>
+            <dd>
+                <ul>
+                    <li>テーブルのキャプション（タイトル）を定義</li>
+                    <li>テーブル内には1つのキャプション（タイトル）しか使用できない</li>
+                </ul>
+            </dd>
+        </dl>
+
+        <h2>注意点</h2>
+        <ul>
+            <li>caption要素は、table要素の<span class="red">最初の子要素として配置</span>する</li>
+            <li>表示位置を調整したい場合は、CSSを使って行う</li>
+        </ul>
+    </body>
+
+</html>
