@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン</title>
+</head>
+<body>
+    <h1>ログイン</h1>
+    <form action="#" method="post">
+    <!-- 例：<form action="/users/sign_in"></form> -->
+
+        <input type="text" name="username" placeholder="ユーザーネーム" required>
+        <input type="password" name="password" placeholder="パスワード" required>
+        <input type="submit" value="ログイン">
+        <!-- <button type="submit">ログイン</button> -->
+    </form>
+
+
+    <br><br><br><br>
+    <hr>
+
+    <h1>要素:form</h1>
+    <p>form (フォーム)</p>
+    <p>例</p>
+    <p>
+    
+    ＜form action="#" method="post"＞
+    ＜/form＞
+    
+    </p>
+
+    <ul>
+        <li>action属性：どこにデータを送信するのかを記述</li>
+        <li>method属性：HTMLリクエストメソッドの種類を記述</li>
+    </ul>
+
+    <br><br><br>
+
+    <h1>要素：input</h1>
+    <p>input (インプット)</p>
+    <p>例</p>
+    <p>＜input type="text"＞</p>
+    <ul>
+        <li>データを入力するためのフォーム部品を作る要素</li>
+        <li>type属性を指定することで様々な入力フォームを作成可能</li>
+        <li>終了タグをつけない、空要素</li>
+    </ul>
+
+    <br><br><br>
+    <h1>input要素の属性</h1>
+
+    <h2>① type属性：text</h2>
+    <p>例</p>
+    <p>type="text"</p>
+    <ul>
+        <li>テキストの入力欄が作れる</li>
+        <li>一行入力フィールドであり、改行は不可</li>
+    </ul>
+
+    <br><br>
+
+    <h2>② type属性：password</h2>
+    <p>例</p>
+    <p>type="password"</p>
+    <ul>
+        <li>パスワードの入力欄が作れる</li>
+        <li>入力値を隠す1行テキストフィールド</li>
+        <li>入力した文字は「●」で表示される</li>
+    </ul>
+
+    <br><br>
+    <h2>③ 属性：name</h2>
+    <p>例</p>
+    <p>name="username"</p>
+    <ul>
+        <li>サーバー側のプログラムが、フォームから送られてきたデータが何かを判別するためにつけた名前</li>
+    </ul> 
+
+
+    <br><br>
+    <h2>④ 属性：placeholder</h2>
+    <p>例</p>
+    <p>placeholder="ユーザーネーム"</p>
+    <ul>
+        <li>説明のテキストを入れることができる</li>
+        <li>ユーザーが文字を入力しようとすると、表示されなくなる</li>
+    </ul>   
+
+    <br><br>
+    <h2>⑤ 属性：value</h2>
+    <p>例</p>
+    <p>value="ログイン"</p>
+    <ul>
+        <li>ボタンのラベルのテキストを指定することができる</li>
+    </ul>   
+</body>
+</html>
