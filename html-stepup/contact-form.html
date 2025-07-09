@@ -9,14 +9,14 @@
 
     <body>
         <h1>お問合せフォーム</h1>
-    </body>
+    
     <form action="#" method="post">
         <dl>
             <dt>お名前</dt>
-            <dd><input type="text" name="username"></dd>
+            <dd><input type="text" name="username" required></dd>
 
             <dt>メールアドレス</dt>
-            <dd><input type="text" name="email"></dd>
+            <dd><input type="text" name="email" required></dd>
 
             <dt>お住まいの地域</dt>
             <dd>
@@ -32,7 +32,65 @@
                     <option value="okinawa">沖縄</option>
                 </select>
             </dd>
+            <dt>性別</dt>
+            <dd>
+                <input type="radio" name="gender" value="male" checked>男性
+                <input type="radio" name="gender" value="female">女性
+            </dd>
+            <dt>お問い合わせの内容</dt>
+            <dd>
+                <textarea name="contents" required></textarea>
+            </dd>
+            <!-- 複数行の入力にはテキストエリアを使う　学習時点ではinputで書かない -->
+             <dt>プライバシーポリシーに同意する</dt>
+             <dd>
+                <input type="checkbox" name="privacy_policy" value="1" required>
+             </dd>
+            <dt>送信ボタン</dt>
+            <dd>
+                <input type="submit" value="送信">
+                <!-- <button type="submit">送信</button> -->
+            </dd>
         </dl>
     </form>
 
+
+    <br><br><br><br><br><br><br><br>
+    <hr>
+    <br>
+
+    <h1>value属性は要素のtypeによってその役割が異なる</h1>
+
+    <br>
+
+    <h2>テキスト入力欄(type="text"など)</h2>
+    <ul>
+    <li>value属性は・・・フィールドの初期入力値を定義
+        <ul>
+            <li>ユーザーが何も入力していない場合に表示される値</li>
+        </ul>
+    </li>
+    </ul>
+
+    <br><br>
+    
+    <h2>チェックボックス(type="checkbox")とラジオボタン(type="radio")</h2>
+    <ul>
+        <li>value属性は・・・選択されたときにサーバーへ送信される値を指定
+            <ul>
+                <li>要素が選択されていない場合、そのvalueはフォームデータの含まれない</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br><br>
+    <h2>送信ボタン(type="submit")</h2>
+    <ul>
+        <li>value属性は・・・ボタンに表示されるテキストを指定
+            <ul>
+                <li>ボタンのラベルを指定</li>
+            </ul>
+        </li>
+    </ul>
+    </body>
 </html>
