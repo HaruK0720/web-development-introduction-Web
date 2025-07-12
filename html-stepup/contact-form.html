@@ -114,8 +114,8 @@
 
         <br>
         <p>例</p>
-        <p>＜dt＞＜label for="username"＞お名前＜/label＞＜/dt＞</p>
-        <p>＜dd＞＜input id="username" type="text" name="username" required＞＜/dd＞</p>
+        <p>＜label for="username"＞お名前＜/label＞</p>
+        <p>＜input id="username" type="text" name="username" required＞</p>
 
 
         <br>
@@ -134,5 +134,18 @@
         <p>HTMLでは、フォームの入力要素に対してバリデーションを設定することができる</p>
         <p>例えば、<code>required</code>属性を使用して、特定のフィールドが必須であることを指定できる</p>
         <p>また、<code>type</code>属性を使用して、入力の形式を制限することも可能</p>
+
+        <br>
+
+        <h3>注意事項</h3>
+        <p>クライアント側のフォームバリデーションは…</p>
+        <ul>
+            <li>ユーザーが簡単に書き換えられる</li>
+            <li>不正対策には使えない</li>
+        </ul>
+        <p>→ セキュリティやデータの信頼性は保証できない</p>
+        <p>例えば、ブラウザの検証から簡単に書き換えれる</p>
+
+        <p>対策はサーバーサイド側でチェックする。フォームからのデータを受け取るプログラム側でも、値の正当性をチェック</p>
     </body>
 </html>
