@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>演習：フォーム</title>
+    </head>
+
+    <body>
+        <h1>アルバイト応募フォーム</h1>
+        <form action="#" method="post">
+            <!-- action属性は、フォームのデータを送信する先のURLを指定します。
+            ここでは"#"を指定していますが、実際のアプリケーションでは、サーバーのURLを指定することが一般的です。
+            method属性は、フォームのデータを送信するHTTPメソッドを指定します。
+            ここでは"post"を指定していますが、"get"を指定することもできます。 -->
+
+            <!-- postメソッドは、データをリクエストボディに含めて送信します。
+            これにより、データがURLに表示されず、セキュリティが向上します。
+            getメソッドは、データをURLのクエリパラメータとして送信します。
+            これにより、データがURLに表示されますが、セキュリティ上の懸念があります。 -->
+
+            <!-- ここでは、postメソッドを使用してフォームのデータを送信します。 -->
+            <dl>
+                <dt>お名前</dt>
+                <dd><input type="text" name="username" required></dd>
+
+                <dt>email</dt>
+                <dd><input type="text" name="email" required></dd>
+
+                <dt>性別</dt>
+                <dd>
+                    <label><input type="radio" name="gender" value="male" checked>男性</label>
+                    <label><input type="radio" name="gender" value="female">女性</label>
+                </dd>
+
+                <dt>現在のご職業</dt>
+                <dd>
+                    <select name="job">
+                        <option value="">選択してください</option>
+                        <option value="student">学生</option>
+                        <option value="jobless">無職</option>
+                        <option value="other">その他</option>
+                    </select>
+                </dd>
+
+                <dt>自己PR</dt>
+                <dd><textarea name="pr" id="pr"></textarea></dd>
+
+                <dt>
+                    <label for="privacy">プライバシーポリシーに同意する</label>
+                </dt>
+                <dd>
+                    <input id="privacy" type="checkbox" name="privacy-poricy" value="1" required>
+                </dd>
+            </dl>
+            <input type="submit" name="submit" value="送信">
+        </form>
+    </body>
+
+</html>
