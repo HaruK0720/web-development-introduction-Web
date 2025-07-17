@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>はじめてのCSS</title>
-    <style>
-        h1 {
-            color: #aa0000;
-        }
 
-        /* h1 { color: #aa0000;} */
-    </style>
-    <!-- 外部参照(相対パス) -->
-     <link rel="stylesheet" href="css/base.css">
-</head>
-<body>
-    <h1>内部参照</h1>
-    <h2>外部参照</h2>
-    <!-- cssを外部ファイル化することのメリットは、複数のページ間でスタイルの使い回しができる点 -->
-     <h3 style="color: #00aa00;">インライン</h3>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>はじめてのCSS</title>
+        <style>
+            h1 {
+                color: #aa0000;
+            }
+
+            /* h1 { color: #aa0000;} */
+
+            p {
+                color: #aa0000;
+            }
+            p {
+                color: #0000aa;
+            }
+            h4 {
+                color: #aa0000;
+            }
+        </style>
+        <!-- 外部参照(相対パス) -->
+        <link rel="stylesheet" href="css/base.css">
+        <!-- このlinkタグ(外部参照)を、styleタグの前に書くと内部参照が優先される。 -->
+    </head>
+
+    <body>
+        <h1>内部参照</h1>
+        <h2>外部参照</h2>
+        <!-- cssを外部ファイル化することのメリットは、複数のページ間でスタイルの使い回しができる点 -->
+        <h3 style="color: #00aa00;">インライン</h3>
+        <p>上から下へと評価します</p>
+        <h4 style="color: #00aa00;">優先順位</h4>
+
+
+        <br><br><br>
+        <hr>
+
+        <h1 style="color:black;">CSSの優先順位について</h1>
+        <ol>
+            <li>同一ファイル内では、下に書かれている指定が優先される</li>
+            <li>インライン ＞ 内部参照・外部参照　　高　← 優先順位 ←　低</li>
+        </ol>
+    </body>
+
 </html>
