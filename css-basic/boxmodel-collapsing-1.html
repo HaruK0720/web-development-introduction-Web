@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>マージンの相殺1</title>
+        <style>
+            h1, p {
+                background-color: #0ff;
+            }
+            h1 {
+                margin-bottom: 100px;
+            }
+            p {
+                margin-top: 50px;
+            }
+        </style>
+        <!-- 左右のマージンは相殺されない。 -->
+        <!-- パディング、ボーダーは上下左右全て相殺されない -->
+
+        <!-- Google Chromeの開発者ツールで検証 → 要素(Elements)を選択して、マージンの表示を確認できます。 -->
+        <!-- マージンの相殺は、上下のマージンが重なる場合にのみ発生します。 -->
+        <!-- 例えば、h1の下のマージンとpの上のマージンが重なる場合、相殺されます。 -->
+    </head>
+
+    <body>
+        <h1>ボックスモデルの練習</h1>
+        <p>ボックスモデルの練習ボックスモデルの練習ボックスモデルの練習ボックスモデルの練習ボックスモデルの練習ボックスモデルの練習ボックスモデルの練習</p>
+    </body>
+
+</html>
