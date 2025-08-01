@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ボックスモデルの練習</title>
+        <style>
+            div > h1, div > p {
+                background-color: #0ff;
+            }
+            div > h1 {
+                width: 400px;
+                height: 240px;
+                border: 50px solid #000; 
+                box-sizing: content-box; /* widthとheightの値にpaddingとborderを含めない */
+                /* box-sizing: border-box; /* widthとheightの値にpaddingとborderを含める */
+                margin-left: auto;   
+                margin-right: auto; 
+                text-align: center; 
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1>ボックスモデルの練習</h1>
+        <p>ボックスモデルの練習ボックスモデルの練習ボックスモデルの練習ボックスモデルの練習ボックスモデルの練習ボックスモデルの練習ボックスモデルの練習</p>
+        </div>
+        <br><br><br>
+        <hr>
+        <br>
+
+        <h1>box-sizingプロパティ</h1>
+        <h2>初期値:box-sizing: content-box;</h2>
+        <p>paddingとborderを含めない</p>
+        <br>
+        <h2>box-sizing: border-box;</h2>
+        <p>paddingとborderを含める</p>
+        <br>
+        <p>このようにwidthとheightにパディング領域とボーダー領域を含めるかをbox-sizingプロパティで指定することができる</p>
+        <p style="color: green;">CSSでスタイルを指定していて、コンテンツが横にはみ出して、意図しない横スクロールが発生した場合などは、まず、box-sizingプロパティの指定を確認してみると解決しみることが多いので覚えておこう！</p>
+    </body>
+</html>
