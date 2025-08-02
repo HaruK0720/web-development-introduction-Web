@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マージンとパディングの違い</title>
+    <style>
+        h1 {
+            background-color: #ccc;
+        }
+        p {
+            background-color: blue;
+            margin-top: -60px; /* マージンは外側の余白 */
+            width: 100px; /* パディングは内側の余白 */
+            margin-left: auto;
+            margin-right: auto; /* 左右のマージンを自動で設定して中央寄せ */
+            text-align: center; /* テキストを中央寄せ */
+        }
+    </style>
+</head>
+<body>
+    <h1>1</h1>
+    <p>2</p>
+
+    <br><br><br><hr>
+    <h1 style="background-color: white;">マージンとパディングの違い</h1>
+    <li>余白ができる位置が違う</li>
+    <li>マージンは負の値が使える</li>
+    <li>マージンは値に auto が使える</li>
+</body>
+</html>
