@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>セレクターの練習</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* ユニバーサルセレクタとは、全ての要素を選択するセレクタのこと */
+            /* よく使われるのはブラウザがデフォルトで持っているスタイルを消したいとき。 */
+        }
+        body {
+            background-color: #ccc;
+        }
+        #hello {
+            color: blue;
+        }
+        .completed {
+            text-decoration: line-through;        
+        }
+        li.red {
+            color: red;
+            /* li要素でredクラスがついているものという指定 */
+            /* スペースを開けず続けて繋げて指定する */
+        }
+        .completed.red {
+            color: red;
+            /* completedクラスとredクラスの両方がついている要素を指定 */
+            /* 複数クラスを指定する場合は、スペースを開けずに続けて書く */
+        }
+        ol {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="red">セレクターの練習</h1>
+    <p id="hello">こんにちは後藤さん</p>
+    <ul>
+        <li><input type="checkbox">読書</li>
+        <li class="completed"><input type="checkbox" checked>HTMLの学習</li>
+        <li class="completed red"><input type="checkbox" checked>JavaScriptの学習</li>
+        <!-- スペースを開けて複数のクラスを指定可能 -->
+    </ul>
+
+
+    <br><br><br> <hr>
+    <h1>復習：CSSで最も重要な基本ルール</h1>
+    <p>セレクター { プロパティ：値； }</p>
+    <p>どこの（セレクター）　何を（プロパティ）　どうする（値）</p>
+    <p>どこのセレクターのどのプロパティをどういう値にするか</p>
+    <p>
+        h1 {
+            color: #ff0000;
+        }
+    </p>
+
+    <br>
+
+    <p>idは「#」、classは「.」で指定することができる</p>
+
+    <br>
+
+    <h1>4つのセレクターの優先順位</h1>
+    <ol>
+        <li>IDセレクター</li>
+        <li>クラスセレクター</li>
+        <li>エレメント（要素）セレクター</li>
+        <li>ユニバーサルセレクター</li>
+    </ol>
+    <p>優先順位が高いものから順に、スタイルが適用される</p>
+    <p>IDセレクターが一番優先順位が高く、ユニバーサルセレクターが一番優先順位が低い</p>
+</body>
+</html>
