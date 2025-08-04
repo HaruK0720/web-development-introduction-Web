@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>結合子を使ったセレクタ</title>
+  <style>
+    /* 子孫セレクタ */
+    p span {
+      color: red; /* p内のspan要素の文字色を赤に */
+    }
+    /* 子セレクタ */
+    p > span {
+        text-decoration: underline; /* pの直下のspan要素のテキストを下線付きに */
+    }
+    /* 隣接セレクタ */
+    h2 + p {
+        font-weight: bold; /* h2の直後のp要素のフォントを太字に */
+    }
+    /* 間接セレクタ */
+    h2 ~ p {
+        color: purple; /* h2の後に続くすべてのp要素の文字色を紫に */
+    }
+  </style>
+</head>
+<body>
+  <h1><span>結合子</span>を使ったセレクタ</h1>
+  <p><span>結合子</span>を使ったセレクタを学ぶと、<strong>より<span>詳細</span>にスタイルの適用先を指定できる</strong>ので、とても便利です。</p>
+
+  <h2>結合子を使ったセレクタ一覧</h2>
+  <!-- <h3>h3テキスト</h3> -->
+  <p>組み合わせによって詳細にスタイルの適用先を指定</p>
+  <p>以下の種類があります</p>
+  <ul>
+    <li>子孫セレクタ</li>
+     <!-- A B {} Aの階層下全てcのB 　半角スペース　 よく使われる-->
+    <li>子セレクタ</li>
+     <!-- A > B {} Aの直下（1つ下）のB 　>　 使われる-->
+     <li>隣接セレクタ</li>
+     <!-- A + B {} Aの直後に記述した同階層のB 　+　 利用例：見出しに"続く"段落に何かするとき-->
+    <li>間接セレクタ</li>
+     <!-- A ~ B {} Aの後に記述したすべての同階層のB 　~（チルダ）　 利用例：見出しに"続く"段落に何かするが、間に他の要素があってもよいとき -->
+  </ul>
+</body>
+</html>
