@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>擬似クラス</title>
+    <style>
+        a:link {
+            color: black; /* リンクの色 */
+        }
+        a:visited {
+            color: red; /* 訪問済みリンクの色 */
+        }
+        a:hover {
+            color: green; /* ホバー時のリンクの色 */
+        }
+        a:active {
+            color: blue; /* アクティブ状態のリンクの色 */
+        }
+
+        strong{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">リンク</a>
+
+    <br><br><br>
+    <hr>
+    <h1>擬似クラスとは？</h1>
+    <p>要素の状態に応じてCSSの背艇を適用することができる。</p>
+    <br>
+    <p>セレクター：擬似クラス { スタイル }</p>
+    <br>
+    <h2>リンクで使用する擬似クラス</h2>
+    <ul>
+        <li><code>a:link</code> - 未訪問のリンク</li>
+        <li><code>a:visited</code> - 訪問済みリンク</li>
+        <li><code>a:hover</code> - ホバー状態ののリンク</li>
+        <li><code>a:active</code> - クリック状態のリンク</li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <h2>補足①記述の順番</h2>
+    <p>a:<strong>l</strong>ink → a:<strong>v</strong>isted → a:<strong>h</strong>over → a:<strong>a</strong>ctive</p>
+    <p>→ LVHA</p>
+    <br>
+    <h2>補足②スマートフォンやタブレットでの注意点</h2>
+    <p>スマートフォン、タブレット等ではホバー状態が発生しない。</p>
+</body>
+</html>
