@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォントを設定しよう</title>
+    <style>
+        html {
+            /* font-family: serif; /* 全体のフォントをセリフ体に設定 */
+            /* font-family: sans-serif; /* 全体のフォントをサンセリフ体に設定 */
+            /* font-family: monospace; /* 全体のフォントを等幅フォントに設定 */    
+            
+            font-family: "メイリオ", "Hiragano KakuGoshic ProN", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>　私わたくしはその人を常に先生と呼んでいた。だからここでもただ先生と書くだけで本名は打ち明けない。これは世間を憚はばかる遠慮というよりも、その方が私にとって自然だからである。私はその人の記憶を呼び起すごとに、すぐ「先生」といいたくなる。筆を執とっても心持は同じ事である。よそよそしい頭文字かしらもじなどはとても使う気にならない。</p>
+
+    <br><br><br>
+    <hr>
+    <br>
+    
+    <h1>CSSによるフォント指定</h1>
+
+    <h2>構文</h2>
+    <p>セレクタ { font-family: フォント名 or フォントファミリー; }</p>
+
+    <br>
+    <h2>フォント名</h2>
+    <p>セレクタ { font-family: <span style="color: red;">フォント名</span> <span style="color: gray;">or フォントファミリー;</span> }</p>
+    <p>具体的なフォント名を指定</p>
+    <p>例：<code>font-family: "メイリオ", "Hiragano KakuGoshic ProN";</code></p>
+    <p>※インストールされているフォントが、デバイスで異なるので、意図しないフォントが表示される可能性がある。</p>
+
+    <br>
+    <h2>フォントファミリー</h2>
+    <p>セレクタ { font-family: <span style="color: gray;">フォント名</span> <span style="color: red;">or フォントファミリー;</span> }</p>
+    <p>フォントの種類を示すキーワードで指定</p>
+    <p>例：<code>font-family: serif;</code> → 明朝体、sans-serif → ゴシック体</p>
+    <p>※フォントファミリーは、ブラウザに組み込まれているフォントを使用するため、デバイス間での表示が一貫している。</p>
+
+    <br>
+    <h2>font-familyプロパティの設定事例</h2>
+    <p>html { font-family: "メイリオ", "Hiragano KakuGoshic ProN", sans-serif; }</p>
+    <p>高 →ー→ 優先順位 →ー→ 低</p>
+    <p>一つの絶対な正解があるわけではない。どのフォントが使われるかは、環境による。</p>
+
+    <br><br>
+    <h2>どうやって指定を決めるのか</h2>
+    <p>フォントファミリーの設定方法には、1つの正解があるわけではない。</p>
+    <p>→プロジェクトで決める</p>
+    <p>自分で作りたいと思っているサービスに似た、大手のウェブサイトを研究するのも一つの方法。</p>
+    <p>→ サイトをブラウザで開く　→ 検証　→ スタイル　→ フィルター　→ font　と入力</p>
+</body>
+</html>
