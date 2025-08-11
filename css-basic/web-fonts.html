@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ウェブフォント</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+        <style>
+            div {
+                font-family: "Potta One", system-ui;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <p>私わたくしはその人を常に先生と呼んでいた。だからここでもただ先生と書くだけで本名は打ち明けない。これは世間を憚はばかる遠慮というよりも、その方が私にとって自然だからである。私はその人の記憶を呼び起すごとに、すぐ「先生」といいたくなる。筆を執とっても心持は同じ事である。よそよそしい頭文字かしらもじなどはとても使う気にならない。
+            </p>
+        </div>
+
+        <br><br><br>
+        <hr>
+        <h1>ノート</h1>
+        <p>今回やったこと</p>
+        <ul>
+            <li><a href="https://fonts.google.com/">Google Fonts</a>を使ってウェブフォントを読み込む</li>
+            <li>CSSでフォントファミリーを指定する</li>
+        </ul>
+
+        <ol>
+            <li>Google Fonts を起動</li>
+            <li>サイト上部の Searchj fonts に potta one と入力</li>
+            <li>画面右上の Get font ボタンを押す</li>
+            <li>画面右上のGet embed code ボタンを押す</li>
+            <li>web の ＜link＞ のラジオボタンを選択（基本） そして上のembed code in the ＜head＞ of your html のコードをコピーして head内の title の下に貼り付ける
+            </li>
+            <li>styleタグを用いて css でフォントファミリーを指定する → 先ほどのサイトの下の Potta One: CSS class と書かれたコード内の font-family: ～～ をコピーして貼り付ける
+            </li>
+        </ol>
+
+        <br><br>
+
+        <h2>ウェブフォント まとめ</h2>
+        <p>ウェブフォントとは、Webサーバー上に配置したフォントファイルをインターネット経由で配信して、ウェブブラウザで表示させる仕組み。</p>
+        <br>
+
+        <p style="color: red">メリット</p>
+        <li>表示環境に依存しないで、意図したフォントをユーザーに表示できる。</li>
+
+        <p style="color: blue">デメリット</p>
+        <li>ダウンロードに時間がかかり、ページの表示が遅く感じられる場合がある。</li>
+        <li>有料の場合もある</li>
+    </body>
+
+</html>
