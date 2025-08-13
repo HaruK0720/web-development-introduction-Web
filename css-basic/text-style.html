@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキストのスタイル</title>
+    <style>
+        div h1 {
+            color: blue;
+            /* text-align: right; /* 右寄せ */
+            /* text-align: left; /* 左寄せ */
+            text-align: center; /* 中央寄せ */
+        }
+        div p {
+            /* font-size: 60px; */
+            font-size: 2rem; /* 2remは16pxの2倍、つまり32px */
+            font-weight: bold; /* 太字 */
+            /* text-decoration: line-through; /* 打ち消し線 */;
+            text-decoration: underline; /* 下線 */
+            font-style: italic; /* 斜体 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>テキストのスタイル</h1>
+    <p>私わたくしはその人を常に先生と呼んでいた。だからここでもただ先生と書くだけで本名は打ち明けない。これは世間を憚はばかる遠慮というよりも、その方が私にとって自然だからである。私はその人の記憶を呼び起すごとに、すぐ「先生」といいたくなる。筆を執とっても心持は同じ事である。よそよそしい頭文字かしらもじなどはとても使う気にならない。</p>
+    </div>
+
+
+    <br><br><br><hr>
+
+    <h1> テキストにスタイルを当てる方法</h1>
+    <ul>
+        <li>color</li>
+        <li>font-size （単位 px, em, remなど）</li>
+        <li>font-weight （bold, normalなど）</li>
+        <li>text-align （right, left, centerなど）</li>
+        <li>text-decoration （line-through, underlineなど）</li>
+    </ul>
+
+    <br><br><br>
+
+    <h1>フォントサイズ指定でよく使う4つの単位</h1>
+    <table border="1">
+        <tr>
+            <th>単位</th>
+            <th>絶対値・相対値</th>
+            <th>説明</th>
+            <th>例：html要素が16px 親要素が8pxの場合</th>
+        </tr>
+        <tr>
+            <td>px</td>
+            <td>絶対値</td>
+            <td>どんな時でも、指定のサイズになる</td>
+            <td>32px = 32px</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>相対値</td>
+            <td>親要素に指定されている文字の大きさの何％か</td>
+            <td>50% = 4px</td>
+        </tr>
+        <tr>
+            <td>em</td>
+            <td>相対値</td>
+            <td>親要素に指定されている文字の大きさの何割か 1em = 100%</td>
+            <td>2em = 16px</td>
+        </tr>
+        <tr>
+            <td>rem</td>
+            <td>相対値</td>
+            <td>html(ルート)要素に指定されている文字の大きさの何割か 1rem = 100%</td>
+            <td>2rem = 32px</td>
+        </tr>
+    </table>
+</body>
+</html>
