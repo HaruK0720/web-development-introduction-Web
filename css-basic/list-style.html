@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リストの装飾</title>
+    <style>
+        ul {
+            /* list-style-type: square; /* リストのスタイルを四角に設定 */
+            /* list-style-type: none; /* リストのスタイルをなしに設定 */
+            list-style-type: decimal; /* リストのスタイルを数字に設定 */
+
+            /* list-style-position: inside; /* リストのスタイルをリストアイテムの内側に配置 */
+            /* list-style-position: outside; /* リストのスタイルをリストアイテムの外側に配置 */
+
+            list-style-image: url(images/list-marker.pngb)
+        }
+    </style>
+</head>
+<body>
+    <h1>リストの装飾</h1>
+    <!-- <ul>
+        <li>砂糖</li>
+        <li>塩</li>
+        <li>酢</li>
+        <li>醤油</li>
+        <li>味噌</li>
+    </ul> -->
+
+    <ul>
+        <li>砂糖<br>を入れます</li>
+        <li>塩<br>を入れます</li>
+        <li>酢<br>を入れます</li>
+        <li>醤油<br>を入れます</li>
+        <li>味噌<br>を入れます</li>
+    </ul>
+
+    <br><br><br><br><br><hr>
+
+    <h1>リストマーカーのスタイルを指定するプロパティ</h1>
+    <ul>
+        <li>list-style-type</li>
+        <li>list-tyle-position</li>
+        <li>list-style-image</li>
+    </ul>
+    
+    <p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/list-style-type">MDNでlist-style-typeを調べてみましょう。</a></p>
+
+</body>
+</html>
