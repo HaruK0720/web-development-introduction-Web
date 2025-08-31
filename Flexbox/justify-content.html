@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox入門 justify-contentプロパティ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex; 
+            /* justify-content: flex-start; /* 初期値 左ぞろえ */
+            /* justify-content: flex-end; /* 右ぞろえ */
+            justify-content: center; /* 中央ぞろえ */
+            /* justify-content: space-between; /* 最初と最後 両端のアイテムは端に配置し、残りの子要素を均等に配置。 */          
+            /* justify-content: space-around; /* 要素間を均等に配置、両端は要素の半分の余白 */
+            /* justify-content: space-evenly; /* 要素間を均等に配置、両端もアイテムと同じ余白 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item01</div>
+        <div class="item">item02</div>
+        <div class="item">item03</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><hr>
+
+    <h1>justify-contentプロパティ</h1>
+    <p>justify-contentプロパティで、子要素の水平方向の揃えを指定できるようになる。</p>
+    <table border="1">
+        <tr>
+            <td>flex-start（初期値）</td>
+            <td>左ぞろえ</td>
+        </tr>
+        <tr>
+            <td>flex-end</td>
+            <td>右ぞろえ</td>
+        </tr>
+        <tr>
+            <td>center</td>
+            <td>中央ぞろえ</td>
+        </tr>
+        <tr>
+            <td>space-between</td>
+            <td>最初と最後 両端のアイテムは端に配置し、残りの子要素を均等に配置。</td>
+        </tr>
+        <tr>
+            <td>space-around</td>
+            <td>要素間を均等に配置、両端は要素の半分の余白</td>
+        </tr>
+        <tr>
+            <td>space-evenly</td>
+            <td>要素間を均等に配置、両端もアイテムと同じ余白</td>
+        </tr>
+    </table>
+    <p>justify-contentプロパティを使うと、親要素の空きスペースがあった場合の子要素の水平方向位置を簡単に指定することができる。</p>
+</body>
+</html>
