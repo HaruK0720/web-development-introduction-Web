@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox入門 flex-directionプロパティ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            /* flex-direction: row;  /* 初期値 右から左へ */
+            /* flex-direction: row-reverse; */ /* 左から右へ */ 
+            flex-direction: column; /* 上から下へ */
+            /* flex-direction: column-reverse; /* 下から上へ */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item01</div>
+        <div class="item">item02</div>
+        <div class="item">item03</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><hr>
+
+    <h1>flex-directionプロパティ</h1>
+
+    <ul>
+        <li>row (初期値) 右から左へ 1 → 5</li>
+        <li>row-reverse 左から右へ 5 ← 1</li>
+        <li>column 上から下へ 1 ↓ 4</li>
+        <li>column-reverse 下から上へ 4 ↑ 1</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>row (初期値) </td>
+            <td>右から左へ 1 → 5</td>
+        </tr>
+        <tr>
+            <td>row-reverse</td>
+            <td>左から右へ 5 ← 1</td>
+        </tr>
+        <tr>
+            <td>column</td>
+            <td>上から下へ 1 ↓ 4</td>
+        </tr>
+        <tr>
+            <td>column-reverse</td>
+            <td>下から上へ 4 ↑ 1</td>
+        </tr>
+    </table>
+</body>
+</html>

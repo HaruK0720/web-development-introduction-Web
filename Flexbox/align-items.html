@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox入門 align-itemsプロパティ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex; 
+            height: 100vh; /* ビューポートハイトの略 100vh：ブラウザウィンドウの表示領域いいっぱいの高さ*/
+            /* align-items: stretch; /* 要素の高さを揃える（デフォルトで有効） */
+            /* align-items: flex-start; /* 上ぞろえ */
+            /* align-items: flex-end; /* 下ぞろえ */
+            /* align-items: center; /* 中央ぞろえ */
+            align-items: baseline; /* テキストのベースラインに揃える （文字の最下部が揃う）*/
+        }
+        .lg {
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item01</div>
+        <div class="item lg">item02</div>
+        <div class="item">item03</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><hr>
+
+    <h1>align-itemsプロパティ</h1>
+    <p>align-itemsプロパティで、子要素の垂直方向の揃えを指定できるようになる。</p>
+
+    <table>
+        <tr>
+            <td>stretch</td>
+            <td>要素の高さを揃える（デフォルトで有効）</td>
+        </tr>
+        <tr>
+            <td>flex-start</td>
+            <td>上ぞろえ</td>
+        </tr>
+        <tr>
+            <td>flex-end</td>
+            <td>下ぞろえ</td>
+        </tr>
+        <tr>
+            <td>center</td>
+            <td>中央ぞろえ（親要素の高さ内で）</td>
+        </tr>
+        <tr>
+            <td>baseline</td>
+            <td>テキストのベースラインに揃える（文字の最下部が揃う）</td>
+        </tr>
+    </table>
+</body>
+</html>

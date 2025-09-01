@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox入門 flex-wrapプロパティ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex; 
+            /* flex-wrap: nowrap; /* 初期値 折り返さずに一列に表示 */
+            flex-wrap: wrap; /* 折り返して上から下へ */
+            /* flex-wrap: wrap-reverse; /* 折り返してしたから上へ */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item01</div>
+        <div class="item">item02</div>
+        <div class="item">item03</div>
+        <div class="item">item04</div>
+        <div class="item">item05</div>
+        <div class="item">item06</div>
+        <div class="item">item07</div>
+        <div class="item">item08</div>
+        <div class="item">item09</div>
+        <div class="item">item10</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><hr>
+
+    <h1>flex-wrapプロパティ</h1>
+    <p>flex-wrapプロパティで、子要素の折り返しを指定できるようになる。</p>
+    <table>
+        <tr>
+            <td>nowrap（初期値）</td>
+            <td>折り返さずに一列に表示</td>
+        </tr>
+        <tr>
+            <td>wrap</td>
+            <td>折り返して上から下へ</td>
+        </tr>
+        <tr>
+            <td>wrap-reverse</td>
+            <td>折り返してしたから上へ</td>
+        </tr>
+    </table>
+</body>
+</html>
