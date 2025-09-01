@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSSグリッドレイアウト入門</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: 200px 200px 200px; 
+                gap: 16px;
+            }
+            .item {
+                background-color: #ffa61c;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="item">item01</div>
+            <div class="item">item02</div>
+            <div class="item">item03</div>
+            <div class="item">item04</div>
+            <div class="item">item05</div>
+            <div class="item">item06</div>
+        </div>
+
+
+        <br><br><br><br><br><hr>
+
+        <h1>GridコンテナーとGridアイテム</h1>
+        <p>CSSグリッドレイアウトは、親要素であるGridコンテナーと子要素であるGridアイテムで構成されている。</p>
+        <p>親要素のGridコンテナーに対して、<code>display: grid;</code> を指定すると、直接の子要素がすべてGridアイテムへと変わる。</p>
+        <p>Gridアイテム間の余白は、<code>gap</code> というプロパティで指定できる。</p>
+    </body>
+
+</html>
