@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSSグリッドレイアウト入門 grid-template-columnsプロパティ</title>
+        <style>
+            .container {
+                display: grid;
+                /* grid-template-columns: 200px 200px 200px 200px;  */
+                /* grid-template-columns: 100px 100px 400px; */
+                /* grid-template-columns: 100px 100px auto; */
+                grid-template-columns: 1fr 1fr 1fr; 
+                /* grid-template-columns: 2fr 1fr 1fr; */
+                /* grid-template-columns: 500px 1fr 1fr; */
+
+                gap: 16px;
+            }
+            .item {
+                background-color: #ffa61c;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="item">item01</div>
+            <div class="item">item02</div>
+            <div class="item">item03</div>
+            <div class="item">item04</div>
+            <div class="item">item05</div>
+            <div class="item">item06</div>
+        </div>
+
+
+        <br><br><br><br><br><hr>
+        <h1>grid-template-columnsプロパティ</h1>
+        <p>子要素であるGridアイテムの横並びについての指定を行うことができる</p>
+        <br>
+        <h2>単位 fr</h2>
+        <p>gridレイアウトを使うに当たって誕生した新しいサイズの単位</p>
+        <p style="margin-right: 450px; background-color: #ddd7d7;"><span style="color: blue;">fr</span> = <span style="color: red;">fraction</span>(分数)</p>
+
+        <br>
+        <p>例：1fr 1fr 1fr → 1対1対1 で分割される</p>
+        <p>例：2fr 1fr 1fr → 2対1対1 で分割される</p>
+        <p>例：500px 1fr 2fr → まず 500px が固定され、残りが 1対2 で分割される</p>
+    </body>
+
+</html>
