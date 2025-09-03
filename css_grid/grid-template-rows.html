@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSSグリッドレイアウト入門 grid-template-rowsプロパティ</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr; 
+                /* grid-template-rows: 200px 200px 200px; */
+                /* grid-template-rows: 200px auto 200px; */
+                grid-template-rows: 1fr 1fr 1fr; 
+                gap: 16px;
+                height: 100vh; /* vhとはビューポートの高さに対する割合の単位。100vhと指定すると、画面の高さいっぱいという指定になる。*/
+            }
+            .item {
+                background-color: #ffa61c;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="item">item01</div>
+            <div class="item">item02</div>
+            <div class="item">item03</div>
+            <div class="item">item04</div>
+            <div class="item">item05</div>
+            <div class="item">item06</div>
+        </div>
+
+
+        <br><br><br><br><br><hr>
+        <h1>grid-template-rowsプロパティ</h1>
+        <p>縦の並びについての指定ができるプロパティ</p> 
+        
+    </body>
+    
+</html>
