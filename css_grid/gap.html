@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSSグリッドレイアウト入門 gapプロパティ</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr; 
+                grid-template-rows: 200px 200px;
+                /* gap: 16px; */
+                /* column-gap: 16px; /* 横(列間)の余白 */
+                /* row-gap: 30px; /* 縦(行間)の余白 */
+                gap: 50px 10px; /* 一括指定 (縦 横) */
+                border: 5px solid;
+            }
+            .item {
+                background-color: #ffa61c;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="item">item01</div>
+            <div class="item">item02</div>
+            <div class="item">item03</div>
+            <div class="item">item04</div>
+            <div class="item">item05</div>
+            <div class="item">item06</div>
+        </div>
+
+
+        <br><br><br><br><br><hr>
+
+        <h1>gapプロパティ</h1>
+        <p>Gridアイテム間の余白は、<code>gap</code> というプロパティで指定できる。</p>
+        <ul>
+            <li>gap: 16px</li>
+            <li>横 column-gap: 16px;</li>
+            <li>縦 row-gap: 30px;</li>
+            <li>一括指定 gap: 30px 16px;</li>
+        </ul>
+    </body>
+
+</html>
