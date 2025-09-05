@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSSグリッドレイアウト入門 repeat関数</title>
+        <style>
+            .container {
+                display: grid;
+                /* grid-template-columns: repeat(3, 1fr); */
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 200px 200px;
+                gap: 16px; 
+            }
+            .item {
+                background-color: #ffa61c;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="item">item01</div>
+            <div class="item">item02</div>
+            <div class="item">item03</div>
+            <div class="item">item04</div>
+            <div class="item">item05</div>
+            <div class="item">item06</div>
+        </div>
+
+
+        <br><br><br><br><br><hr>
+
+        <h1>repeat関数</h1>
+        <p>repeat( 繰り返す数 要素の幅 )</p>
+        <br>
+        <p>grid-template-columns: 1fr 1fr 1fr;</p>
+        <p>↓</p>
+        <p>grid-template-columns: repeat(3, 1fr)</p>
+    </body>
+
+</html>
