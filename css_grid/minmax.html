@@ -4,12 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CSSグリッドレイアウト入門 repeat関数</title>
+        <title>CSSグリッドレイアウト入門 minmax関数</title>
         <style>
             .container {
                 display: grid;
-                /* grid-template-columns: repeat(3, 1fr); */
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(3, minmax(240px, 1fr));
                 grid-template-rows: 200px 200px;
                 gap: 16px; 
             }
@@ -33,12 +32,14 @@
 
         <br><br><br><br><br><hr>
 
-        <h1>repeat関数</h1>
-        <p>repeat( 繰り返す数, 要素の幅 )</p>
+        <h1>minmax関数</h1>
+        <p>最小値・最大値を指定できるようになる</p>
         <br>
-        <p>grid-template-columns: 1fr 1fr 1fr;</p>
-        <p>↓</p>
-        <p>grid-template-columns: repeat(3, 1fr)</p>
+        <p>例えば、repeat(4, 1fr)で指定していたとして、ブラウザのウィンドウの横幅を小さくしていくと、指定した割合(1:1:1:1)の分割で小さくなっていくが、その最小の幅を設定できるということ。</p>
+        <br>
+        <p>minmax( 最小値, 最大値 )</p>
+        <br>
+        <p>grid-template-columns: repeat(3, minmax(240px, 1fr));</p>
     </body>
 
 </html>
