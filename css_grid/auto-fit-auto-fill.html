@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSSグリッドレイアウト入門 auto-fit / auto-fillで繰り返しの数値を指定しよう</title>
+        <style>
+            .container {
+                display: grid; /* ウィンドウ幅を狭めたり伸ばしたりして見てみるといい */
+                gap: 16px; 
+            }
+            .fill {
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            }
+            .fit {
+                grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+                margin-top: 50px;
+
+            }
+            .item {
+                background-color: #ffa61c;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container fill">
+            <div class="item">item01</div>
+            <div class="item">item02</div>
+            <div class="item">item03</div>
+            <div class="item">item04</div>
+            <div class="item">item05</div>
+            <div class="item">item06</div>
+        </div>
+
+        <div class="container fit">
+            <div class="item">item01</div>
+            <div class="item">item02</div>
+            <div class="item">item03</div>
+            <div class="item">item04</div>
+            <div class="item">item05</div>
+            <div class="item">item06</div>
+        </div>
+
+
+        <br><br><br><br><br><hr>
+        <h1>auto-fill / auto-fitで繰り返しの数値を指定しよう</h1>
+        <br>
+        <h2>auto-fillプロパティ</h2>
+        <p>repeat(auto-fill, 値)</p>
+        <br>
+        <p>グリッドコンテナー（親要素）の大きさに合わせて繰り返す。</p>
+        <br>
+        <p>グリッドコンテナー（親要素）にスペースが余る場合、<span style="color:red;">空のグリッドが作られる</span></p>
+        <p>fill は日本語で言うと 埋める</p>
+        <br><br><br><br>
+
+        <h2>auto-fitプロパティ</h2>
+        <p>repeat(auto-fit, 値)</p>
+        <br>
+        <p>グリッドコンテナー（親要素）の大きさに合わせて繰り返す。</p>
+        <br>
+        <p>グリッドコンテナー（親要素）にスペースが余る場合、<span style="color:red;">余白として扱われる。</span></p>
+        
+    </body>
+
+</html>
