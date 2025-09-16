@@ -30,3 +30,44 @@ header {
     border-radius: 20%;
     margin-bottom: 10px;
 }
+
+/* main */
+h2 {
+    text-align: center;
+}
+
+.myskills {
+    background-color: #f1f1f1;
+}
+
+.myskills ul {
+    margin-top: 30px;
+    list-style: none; /* ・を消す */
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* 余白を持って等間隔に配置 */
+}
+
+.skill_html5 {
+    background-color: #e44d26;
+}
+
+.skill_css3 {
+    background-color: #1572b6;
+}
+
+.skill_javascript {
+    background-color: #ebbc00;
+}
+
+.myskills ul li {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%; /* 円形にする */
+    display: flex;
+    justify-content: center; /* 横方向中央寄せ */
+    align-items: center; /* 縦方向中央寄せ */
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold; /* 太字 */
+}
