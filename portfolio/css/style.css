@@ -89,3 +89,10 @@ h2 {
 .works_box p {
     margin-top: 7px;
 }
+
+/* footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
