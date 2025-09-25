@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* common */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic proN", "メイリオ,", sans-serif; /* ターゲット　mac > windows > その他 */
+    color: #555;
+    line-height: 1.5; /* 行間 単位はつけないことが一般的 */
+}
+
+img {
+    width: 100%; /* 画像の横幅を親要素100%に合わせる */
+}
+
+.wrapper {
+    max-width: 940px; /* 最大幅 コンテンツの横幅*/
+    margin: 0 auto; /* 上下の余白0、左右の余白自動 で コンテンツを中央揃え*/
+    padding: 0 10px; /* スマートフォンなど画面幅が狭い端末などで表示したときのために、左右の余白を確保する */
+}
