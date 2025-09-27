@@ -64,3 +64,55 @@ header nav ul li.current a {
     background-position: center; /* 画像の表示位置を中央に */
     background-size: cover; /* 画像を要素の大きさに合わせる */
 }
+
+/* contents */
+
+.contents {
+    display: flex;
+    justify-content: space-between; /* 左右の端に配置 → メインコンテンツ部分とサイドバー部分が横並びに表示されるようになる*/
+    margin-top: 30px
+}
+
+#main_content {
+    width: 65%; /* メインコンテンツ部分の横幅 */
+}
+
+#sidebar {
+    width: 31%; /* サイドバー部分の横幅 */
+}
+
+#home h2 {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #8c6239;
+    font-size: 1.2rem;
+}
+
+#info  dl {
+    display: flex;
+    flex-wrap: wrap; /* 横幅が足りない場合は折り返す */
+    margin-bottom: 50px;
+}
+
+#info dt {
+    width: 7em; /* dtの横幅  ブラウザの設定でフォントサイズを拡大縮小してもレイアウトが崩れないようにするため */
+}
+
+#info dd {
+    width: calc(100% - 7em); /* ddの横幅  calc()関数で計算 ※お知らせの内容部分は、横幅100％から日付部分(dt)の7emを引いた値*/
+}
+
+#info dt, 
+#info dd {
+    margin-bottom: 10px;
+}
+
+#campaign ul li {
+    margin-bottom: 10px;
+    list-style-type: none; /* リストマーカー(・)を消す */
+}
+
+#sidebar ul li {
+    margin-bottom: 20px; /* 各リストアイテムの下に20pxの余白 サイドバーの写真の間*/
+    list-style-type: none; /* リストマーカー(・)を消す */
+} 
