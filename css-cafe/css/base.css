@@ -116,3 +116,37 @@ header nav ul li.current a {
     margin-bottom: 20px; /* 各リストアイテムの下に20pxの余白 サイドバーの写真の間*/
     list-style-type: none; /* リストマーカー(・)を消す */
 } 
+
+/* footer */
+
+footer {
+    margin-top: 100px;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #8c6239;
+}
+
+footer ul {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+footer ul li {
+    display: inline-block; /* 横並びにする */
+    margin: 5px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none; 
+}
+
+footer ul li a:hover,
+footer ul li a:active {
+    opacity: .7; /* 70% 透過する */
+}
+
+small {
+    font-size: 0.7rem;
+}
