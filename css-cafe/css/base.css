@@ -150,3 +150,26 @@ footer ul li a:active {
 small {
     font-size: 0.7rem;
 }
+
+/* responsive (メディアクエリ) */
+@media(max-width: 600px) {
+    html{
+        font-size: 87.5%; /* 画面幅によってフォントサイズを変更 ：これは600px以下のとき*/
+    }
+
+    .header_logo {
+        width: 60px;
+    }
+
+    .contents {
+        flex-direction: column; /* 縦並びにする */
+        margin-top: 10px;
+    }
+
+    #main_content,
+    #sidebar {
+        width: 100%; /* メインコンテンツ部分とサイドバー部分の横幅を100%にして不自然な余白をなくす */
+    }
+}
+
+
