@@ -31,6 +31,6 @@ ul {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* 画像の横幅を親要素に合わせる */
+    height: auto; /* 縦横比を維持 */
 }
