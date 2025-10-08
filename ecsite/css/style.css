@@ -1,1 +1,36 @@
 @charset "UTF-8";
+
+/* common */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* ゴシック系フォント */
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; /* 中央に配置 */
+    padding: 0 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* 親要素の文字色を継承 */
+    transition: opacity 0.5s; /* 0.5秒かけて変化 見栄えを良くするためのものでなくてもいい*/
+}
+
+a:hover {
+    opacity: 0.7; /* 透明度を70%にする */
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
