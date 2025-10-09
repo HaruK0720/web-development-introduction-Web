@@ -34,3 +34,39 @@ img {
     max-width: 100%; /* 画像の横幅を親要素に合わせる */
     height: auto; /* 縦横比を維持 */
 }
+
+/* header */
+header .wrapper {
+    display: flex; /* 横並びにする */
+    justify-content: space-between; /* 両端揃え 左右に配置 */
+    align-items: center; /* 縦方向の中央揃え */
+    padding-top: 10px; /* ヘッダーの上部に余白 */
+    padding-bottom: 10px; /* ヘッダーの下部に余白 */
+}
+
+.logo {
+    width: 150px;
+}
+
+header form {
+    padding: 10px 15px;
+    width: 400px;
+    border: 1px solid #f1f1f1; /* 薄い灰色の枠線 */
+    border-radius: 2em; /* 角を丸くする */
+}
+
+nav ul {
+    display: flex;
+    gap: 7px; /* 要素間の隙間 */
+}
+
+nav li a {
+    display: flex;
+    flex-direction: column; /* 縦並び アイコンの下に文字*/
+    font-size: 11px;
+    text-align: center; /* 文字を中央揃え */
+}
+
+nav li a i {
+    font-size: 20px; /* アイコンを大きく */
+}
