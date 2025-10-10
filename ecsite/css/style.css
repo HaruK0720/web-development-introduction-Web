@@ -70,3 +70,10 @@ nav li a {
 nav li a i {
     font-size: 20px; /* アイコンを大きく */
 }
+
+/* main visual */
+.mv img{
+    min-height: 250px; /* 画像が小さい場合の最小高さ */
+    object-fit: cover; /* 画像が要素いっぱいに表示されるようにする　*/
+    /* 横幅についてはimgに対して横幅いっぱいに指定しているのでここでは必要ない */
+}
