@@ -77,3 +77,30 @@ nav li a i {
     object-fit: cover; /* 画像が要素いっぱいに表示されるようにする　*/
     /* 横幅についてはimgに対して横幅いっぱいに指定しているのでここでは必要ない */
 }
+
+/* goods */
+.goods {
+    padding-top: 50px; /* 余白の調整 */
+}
+.goods ul {
+    margin-top: 10px;
+    display: grid; /* グリッドレイアウト */
+    grid-template-columns: repeat(3, 1fr); /* 3列　各列の幅は均等 1:1:1 */
+    gap: 20px; /* 要素間の隙間 */
+}
+
+.goods ul li h3 {
+    margin-top: 5px;
+    font-size: 0.9rem; /* 文字サイズを少し小さく */
+}
+
+.btn {
+    display: block; /* ブロック要素にする */
+    margin: 50px auto 0; /* 上に50pxの余白、左右中央寄せ */
+    width: 100%;
+    max-width: 300px; /* 最大横幅300px */
+    background-color: #000; /* 黒背景 */
+    line-height: 50px; /* ボタンの高さ */
+    color: #fff; /* 白文字 */
+    text-align: center; /* 文字を中央揃え */
+}
