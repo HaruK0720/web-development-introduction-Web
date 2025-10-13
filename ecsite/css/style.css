@@ -123,3 +123,22 @@ footer small {
     display: block; /* ブロック要素にする */
     margin-top: 20px; /* 上部に余白 */
 }
+
+/* small screen */
+@media(max-width: 750px) {
+    header form {
+        display: none; /* 検索フォームを非表示 */
+    }
+
+    .goods ul {
+        grid-template-columns: 1fr 1fr; /* 2列 */
+    }
+}
+
+/* 絶対的な一つの正解はない
+
+出来上がったものが要件を満たしていれば問題ない
+
+実務においても、作業者によって方法や考え方が違うことがあるのが普通
+
+特に、明示的に仕様に指定が書かれていない場合は、作業者の裁量に任されることが多く差がでやすい  */
