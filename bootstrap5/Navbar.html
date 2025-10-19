@@ -8,19 +8,26 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> --> <!-- 色を変えたいときは bg-〇〇〇〇 で指定できる bg=background-color? -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
+    <!-- <nav class="navbar navbar-expand-lg navbar- bg-primary"> -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ccc">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">Navbar</a>
-            <div class="collapse navbar-collapse">
+            <!-- hamburger menu ↓ -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> <!-- hamburger menu ↑ -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Menu1</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Menu2</a>
+                        <a href="#" class="nav-link disabled">Menu2</a>
                     </li>
                 </ul>
             </div>
