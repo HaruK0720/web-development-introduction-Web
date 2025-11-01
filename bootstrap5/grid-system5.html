@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid system 5</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <style>
+            .orange {
+                background-color: orange;
+                border: black 1px solid;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-md-2 orange">1</div> <!-- ミックス&マッチ での指定。 どの端末でもみやすく -->
+                <div class="col-lg-1 col-md-2 orange">1</div> <!-- ウィンドウ幅を広げたり狭めたりして動作を確認できる -->
+                <div class="col-lg-1 col-md-2 orange">1</div> <!-- 992px以上だとlgの指定が効いて1の幅で一行だが、992pxを割ると、mdの指定が効いて2の幅で改行されて、縦に並ぶ。 そして、768pxを割るとグリッドオプションが外れて縦並びになる。-->
+                <div class="col-lg-1 col-md-2 orange">1</div>
+                <div class="col-lg-1 col-md-2 orange">1</div>
+                <div class="col-lg-1 col-md-2 orange">1</div>
+                <div class="col-lg-1 col-md-2 orange">1</div>
+                <div class="col-lg-1 col-md-2 orange">1</div>
+                <div class="col-lg-1 col-md-2 orange">1</div>
+                <div class="col-lg-1 col-md-2 orange">1</div>
+                <div class="col-lg-1 col-md-2 orange">1</div>
+                <div class="col-lg-1 col-md-2 orange">1</div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 orange"> <!-- グリッドのネスト 入れ子構造 -->
+                    level 1: 9
+                    <div class="row">
+                        <div class="col-sm-8 orange">level 2: 8</div>
+                        <div class="col-sm-4 orange">level 2: 4</div>
+                    </div>
+                </div>
+                <div class="col-sm-3 orange">
+                    level 1: 3
+                </div>
+            </div>
+        </div>
+
+
+        <br><br><a href="https://getbootstrap.com/docs/5.0/layout/grid/">Grid system</a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
