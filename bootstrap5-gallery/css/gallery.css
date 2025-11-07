@@ -1,0 +1,5 @@
+.bg-img {
+    background-image: url("https://learnwithnakamura.s3.ap-northeast-1.amazonaws.com/bootstrap5/bOy4OPu98lI.jpg");
+    background-size: cover; /* 画像を要素のサイズに合わせて拡大・縮小 divタグ全体を1枚の画像で覆うように表示 */
+    background-position: center 30%; /* 画像の表示位置を中央寄せ */ 
+}
