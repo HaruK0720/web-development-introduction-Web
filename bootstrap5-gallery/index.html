@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>猫のフォトギャラリー</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>  
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm"> <!-- ナビゲーションバーの開始 Bootstapのnavバーのテンプレートからコピペ shadow-を追加した-->
         <div class="container-fluid"> <!-- fluidを指定するとウィンドウサイズを変えても画面いっぱいに表示-->
-            <a class="navbar-brand" href="index.html">Cats</a>
+            <a class="navbar-brand" href="index.html"><i class="bi bi-image me-1"></i>Cats</a> <!-- bi-imageで画像アイコン me-1で右に余白を追加 -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span> <!-- ハンバーガーメニューのアイコン -->
             </button>
@@ -31,7 +32,7 @@
     </nav>
     <div class="px-3 py-5 bg-img"> <!-- padding x軸3 y軸5 背景画像を指定するクラスを追加 -->
         <div class="container text-white">
-            <h1>フォトギャラリー</h1>
+            <h1><i class="bi bi-camera2"></i>フォトギャラリー</h1>
             <p>かわいい猫たちのフォトギャラリーをご覧ください</p>
         </div>
     </div>
