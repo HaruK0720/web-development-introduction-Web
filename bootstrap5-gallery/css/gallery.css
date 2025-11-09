@@ -3,3 +3,7 @@
     background-size: cover; /* 画像を要素のサイズに合わせて拡大・縮小 divタグ全体を1枚の画像で覆うように表示 */
     background-position: center 30%; /* 画像の表示位置を中央寄せ */ 
 }
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif; /* 日本語フォントを指定 Mac用、Windows用、そのどちらのフォントもない場合のフォント */
+}
