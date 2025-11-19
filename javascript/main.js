@@ -1,15 +1,19 @@
 'use strict';
-// 足し算「+」
-console.log(10 + 3); // 13
+let color;
+let colorName; // キャメルケース (小文字で始まり、単語の区切りを大文字にする命名規則)
+let myColorName;  // ローワーキャメルケース
 
-// 引き算「-」
-console.log(10 - 3); // 7
+let favoriteFood = 20; // 混乱につながるわけわからん変数名と代入はやめれ
 
-// 掛け算「*」
-console.log(10 * 3); // 30
+let _color;
+let $name;
 
-// 割り算「/」
-console.log(10 / 3); // 3.3333333333333335
+let name1;
+let _name1;
 
-// あまり「%」
-console.log(10 % 3); // 1
+let foo = 'small';
+let Foo = 'big';
+console.log(foo);
+console.log(Foo);
+
+// 予約語は変数名にできない
