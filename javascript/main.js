@@ -1,19 +1,11 @@
 'use strict';
-let color;
-let colorName; // キャメルケース (小文字で始まり、単語の区切りを大文字にする命名規則)
-let myColorName;  // ローワーキャメルケース
+// console.log('Hello! I'm Haru Kidachi.); // エラー
+console.log('Hello! I\m Haru Kidachi.'); // エスケープシーケンス →mac: option + ¥, windows: ¥ 
 
-let favoriteFood = 20; // 混乱につながるわけわからん変数名と代入はやめれ
+console.log('\¥ \t AAA \n BBB'); // \t: タブ, |n: 改行
 
-let _color;
-let $name;
+console.log("Hello! I'm Haru Kidachi.");
+console.log('"Kidachi"-san.');
 
-let name1;
-let _name1;
-
-let foo = 'small';
-let Foo = 'big';
-console.log(foo);
-console.log(Foo);
-
-// 予約語は変数名にできない
+console.log('Hello');
+console.log("Hello");
