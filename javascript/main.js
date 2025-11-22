@@ -1,22 +1,12 @@
 'use strict';
 
-// const x = 100;
-const x = 99;
-if (x >= 100) {
-    console.log('100以上の値です');
+const x = 90;
+if (x >= 90) {
+    console.log('A');
+} else if (x >= 80) {
+    console.log('B');
+} else if (x >= 60) {
+    console.log('C');
 } else {
-    console.log('100未満の値です');
+    console.log('D');
 }
-
-// 比較演算子一覧
-// > 以上       
-// < 以下
-// >= 以上
-// <= 以下
-// == 等しい
-// != 等しくない
-// === 型も値も等しい
-// !== 型も値も等しくない
-// && かつ
-// || または
-// ! ～ではない
