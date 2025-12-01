@@ -1,4 +1,6 @@
 'use strict';
-for (let i = 1; i <= 3; i++) { // integer=整数
+let i = 1;
+while (i <= 3) {
     console.log(i);
-} 
+    i++;
+}
