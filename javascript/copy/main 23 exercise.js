@@ -1,5 +1,4 @@
 'use strict';
-
 function price(unitPrice, n) {
     return unitPrice * n;
 }
