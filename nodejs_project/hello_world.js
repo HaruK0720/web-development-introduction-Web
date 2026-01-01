@@ -10,3 +10,6 @@ console.log(2 + 3);
 // Hello World from file!
 // 5
 // haru_k@HaruKMacBook-Air web-development-introduction-Web % 
+
+
+// VSCode画面上部のターミナル　→ 新しいターミナル より、ターミナルを下に開く
